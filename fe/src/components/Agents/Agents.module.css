@@ -1,0 +1,190 @@
+.agents {
+  /*background: linear-gradient(135deg, #380935, #050d18);*/
+  color: white;
+}
+
+.agents h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.agentstop {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.agentstop h2 {
+  text-align: center;
+  font-size: 2rem;
+  background: linear-gradient(to right, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.agentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.agentCard {
+  position: relative;
+  background: rgba(56, 9, 53, 0.2);
+  border: 1px solid rgba(163, 114, 175, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.5s ease-out;
+}
+
+.agentCard.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: calc(var(--animation-order) * 0.1s);
+}
+
+.agentCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--agent-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.agentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(253, 136, 137, 0.3);
+}
+
+.agentCard:hover::before {
+  opacity: 0.1;
+}
+
+.rankBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(45deg, #ca6b6d, #e84043);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-weight: normal;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.agentCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fd8889;
+  position: relative;
+  z-index: 2;
+}
+
+.agentCard p {
+  color: #ffffff;
+}
+
+.icon {
+  color: #a372af;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.metric {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.3rem;
+}
+
+.value {
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+}
+
+.speciality {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.detailsButton {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(45deg, #ca6b6d, #e84043);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: normal;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.detailsButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 242, 254, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .agentGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .agents {
+    padding: 3rem 1rem;
+  }
+  
+  .agents h2 {
+    font-size: 2rem;
+  }
+}

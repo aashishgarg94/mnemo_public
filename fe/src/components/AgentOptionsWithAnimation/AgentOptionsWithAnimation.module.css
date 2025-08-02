@@ -1,0 +1,254 @@
+
+.agentOptions {
+  padding: 5rem;
+  min-height: 100vh;
+}
+
+.agentOptions h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+}
+
+/* Central Animation Styles */
+.centralAnimation {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+}
+
+.orb {
+  position: relative;
+  margin-top: 30%;
+  margin-left: 5%;
+  width: 100%;
+  height: 100%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.orbCore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(253, 136, 137, 0.6);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.orbRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(163, 114, 175, 0.3);
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+/* Options Container */
+.optionsContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+}
+
+.option {
+  position: absolute;
+  width: 300px;
+  background: rgba(56, 9, 53, 0.05);
+  border-radius: 20px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  border: 1px solid rgba(163, 114, 175, 0.2);
+}
+
+.topLeft {
+  top: 0;
+  left: 11%;
+  transform: translateY(30%);
+}
+
+.topRight {
+  top: 0;
+  right: 10%;
+  transform: translateY(30%);
+}
+
+.bottomCenter {
+  bottom: 20%;
+  left: 38%;
+  transform: translateY(30%);
+}
+
+.optionContent {
+  text-align: center;
+  color: #ffffff;
+}
+
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: rgba(163, 114, 175, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(163, 114, 175, 0.3);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #a372af;
+  filter: drop-shadow(0 0 10px rgba(163, 114, 175, 0.3));
+}
+
+.option:hover .iconContainer {
+  transform: scale(1.1);
+  border-color: rgba(163, 114, 175, 0.5);
+}
+
+.option h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fd8889;
+}
+
+.option p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Details Section */
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.detailsVisible {
+  max-height: 200px;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.details li {
+  color: #ffffff;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.details li:hover {
+  color: #fd8889;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+}
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .optionsContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .option {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .centralAnimation {
+    position: relative;
+    margin: 2rem 0;
+  }
+}
+
+/* Hover Effects */
+.option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(253, 136, 137, 0.2);
+  background: rgba(56, 9, 53, 0.4);
+  border-color: rgba(163, 114, 175, 0.4);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding-top: 200px; /* Add padding to prevent the orb from being cut off */
+  }
+
+  .centralAnimation {
+    position: absolute; /* Ensures it stays above the cards */
+    top: 0px; /* Position it with enough space from the top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Proper centering */
+    z-index: 2;
+  }
+
+  .optionsContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px; /* Adjust spacing to leave room for the orb */
+  }
+
+  .option {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%; /* Full width with some padding */
+    max-width: none; /* Remove width constraint */
+  }
+}

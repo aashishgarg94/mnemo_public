@@ -1,0 +1,52 @@
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.required {
+  color: #ff6b6b;
+  margin-left: 0.2rem;
+}
+
+.submitButton {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.submitButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,101 @@
+{
+    "id": "cleopatra_ai_adventure_v1",
+    "title": "Cleopatra's AI-Driven Adventure",
+    "intro": "Embark on a journey through Cleopatra’s world, powered by AI agents that adapt to your interests and decisions. From an introduction to Cleopatra’s Alexandria to challenging puzzles and council decisions, every step will be influenced by your choices and Cleopatra’s AI persona.",
+    "ai_character": {
+      "name": "Cleopatra",
+      "backstory": "Cleopatra VII Philopator was the last active ruler of the Ptolemaic Kingdom of Egypt. Known for her intellect, political savvy, and multilingual abilities (she reportedly spoke up to nine languages), Cleopatra was a scholar as well as a leader. In this AI-driven adventure, she provides insights, historical context, and dynamic feedback based on the player’s actions. Use easy english suited to 8 year olds kids."
+    },
+    "scenes": [
+      {
+        "step": 1,
+        "title": "Cleopatra's Balcony Introduction",
+        "description": "View from Cleopatra’s palace balcony overlooking the kingdom. Cleopatra gives a short introduction about herself.",
+        "narration": "Cleopatra: 'I am Cleopatra... (some info about her reign, achievements)'. Cleopatra finishes her monologue. Three suggested prompts are given about conversing with Cleopatra, or the user can keep talking to cleopatra by typing in the text input field. Continue to the next scene by responding explore or next or ok.",
+        "suggested_prompts": [
+            "Tell me about the Library of Alexandria.",
+            "How did you learn so many languages?",
+            "What’s your advice for aspiring leaders?"
+          ],
+        "background_image": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/game_background_balcony.jpeg"
+      },
+      {
+        "step": 2,
+        "title": "Outside Library of Alexandria",
+        "description": "The child is taken to the entrance of the Library of Alexandria. Cleopatra mentions her knowledge and experiences from the library. go to the next step if next or ok is replied",
+        "narration": "Cleopatra: 'This is the library of Alexandria, where I learned 13 languages, about Homer, and so much more.'",
+        "background_image": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/outside_library.png"
+      },
+      {
+        "step": 3,
+        "title": "Inside the Library",
+        "description": "A 2D front-view perspective inside the library. A hidden puzzle (hieroglyphic puzzle) is unlocked on clicking it. Do not talk about what the puzzle is or how to solve it, talk about the library or decide if the next step should be taken.",
+        "narration": "Voiceover: 'While exploring you can find hidden puzzles that test your logic. Beat Cleopatra at the hieroglyphic puzzle!'",
+        "background_image": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/game_background_insidelibrary.jpeg"
+      }
+    ],
+    "background_images": [
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/game_background_balcony.jpeg", "about":"Cleopatra's Palace Balcony"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/outside_library.png", "about":"Outside the library of Alexandria"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/game_background_insidelibrary.jpeg", "about":"Inside the Library of Alexandria"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/cleopatras_statue.png", "about":"View with a Cleopatra's statue"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/cleopatras_bathhouse.png", "about":"View of cleopatra's bathhose"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/drought_nile.png", "about":"Nile with drought"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/cleopatras_private_gardens.png", "about":"Cleopatra's private gardens"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/green_nile.png", "about":"Nile with greenery"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/lighthouse_of_alexandria.png", "about":"Lighthouse of Alexandria"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/temple_of_isis.png", "about":"Temple of Isis"},
+        {"url":"https://mnemo-assets.s3.ap-south-1.amazonaws.com/port_of_alexandria.png", "about":"Port of Alexandria"},
+        {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/sphinx.png", "about": "View with the sphinx"},
+        {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/pyramid_of_giza.png", "about": "Pyramid of Giza"}
+    ],
+    "avatar_images": [
+        {"url":"/cleopatragif.gif", "about":"Cleopatra", "x": 400, "y": 550},
+        {"url":"/councilmangif.gif", "about":"Councilman", "x": 200, "y": 300}
+    ],
+    "companion": {
+        "name": "Cat",
+        "backstory": "Cleopatra’s loyal cat, who accompanies her on her adventures. The cat adds a fun and interactive element to the game. Her replies are one liners which are funny or sarcastic"
+    },
+    "game_visual_assets": [
+      {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/baboon.png", "about": "Baboon", "x": 100, "y": 500},
+      {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/monkey.png", "about": "Monkey", "x": 300, "y": 500},
+      {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/datepalm.png", "about": "Date Palm", "x": 900, "y": 550},
+      {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/junglecat.png", "about": "Jungle Cat", "x": 500, "y": 500},
+      {"url": "https://mnemo-assets.s3.ap-south-1.amazonaws.com/falcon.png", "about": "Falcon", "x": 500, "y": 100}
+    ],
+    "facts": [
+  "Cleopatra was the last active ruler of the Ptolemaic Kingdom of Egypt.",
+  "Cleopatra was the only member of her dynasty to learn and speak the Egyptian language, embodying her dedication to ruling as a true Pharaoh.",
+  "She was a polyglot, fluent in at least 13 languages, allowing her to communicate directly with diplomats and rulers from diverse regions.",
+  "Cleopatra ensured economic stability in Egypt through strategic trade alliances and effective resource management during her reign of 21 years.",
+  "Her reign saw no major internal revolts, a testament to her diplomatic skill and popularity among her people.",
+  "Cleopatra was a scholar with a deep understanding of astronomy, mathematics, and medicine, which she used to strengthen her reign.",
+  "As a naval strategist, she commanded Egypt’s fleet and played a crucial role in the battles of her era.",
+  "Cleopatra's reign preserved Egypt's independence for nearly two decades despite the growing power of Rome.",
+  "She personally oversaw the restoration and construction of temples and monuments, leaving a cultural and architectural legacy.",
+  "Cleopatra understood the divide between the Greek and Egyptian populations and worked to bridge it by embracing both cultures and fostering unity.",
+  "Her leadership elevated Egypt to one of the most stable and prosperous regions in the Mediterranean during her rule."
+    ],
+    "puzzles": [{
+      "puzzle_id": "hieroglyphic_01",
+      "rules": {
+          "description": "The puzzle consists of a 2x2 grid of tiles, each containing a unique hieroglyphic symbol. Each symbol represents a unique number from the set [2, 3, 4, 5]. The task is to determine which number corresponds to which symbol based on the following rules:",
+          "game_rules": [
+              "R1C1 + R1C2 = 8",
+              "R1C1 + R2C1 = 9",
+              "R1C1 + R2C2 = 7"
+          ]
+      },
+      "image": "https://cdn/puzzle1",
+      "numbers": [2, 3, 4, 5],
+      "hints": [
+          "Start by testing different values for R1C1 and check if they satisfy all rules when applied to other tiles.",
+          "Remember that each symbol must have a unique value from [2, 3, 4, 5]."
+      ],
+      "answer_format": "Provide the answer as a sequence of numbers, corresponding to the symbols read left-to-right, top-to-bottom.",
+      "answer": [5, 3, 4, 2],
+      "difficulty": "medium"
+  }
+  ]
+}

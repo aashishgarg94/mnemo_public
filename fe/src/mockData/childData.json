@@ -1,0 +1,80 @@
+{
+  "weeklyProgress": [
+    { "week": "Week 1", "focus": 65, "memory": 45, "problemSolving": 55, "creativity": 70 },
+    { "week": "Week 2", "focus": 70, "memory": 50, "problemSolving": 60, "creativity": 75 },
+    { "week": "Week 3", "focus": 75, "memory": 60, "problemSolving": 65, "creativity": 80 },
+    { "week": "Week 4", "focus": 85, "memory": 70, "problemSolving": 75, "creativity": 85 }
+  ],
+  "monthlyProgress": [
+    { "month": "Sep", "totalScore": 235 },
+    { "month": "Oct", "totalScore": 285 },
+    { "month": "Nov", "totalScore": 310 },
+    { "month": "Dec", "totalScore": 345 }
+  ],
+  "keyMetrics": {
+    "gamesCompleted": 48,
+    "totalPlayTime": "32h 15m",
+    "averageSessionLength": "45m",
+    "skillImprovements": {
+      "focus": "+20%",
+      "memory": "+25%",
+      "problemSolving": "+20%",
+      "creativity": "+15%"
+    }
+  },
+  "historicalComparison": {
+    "currentMonth": {
+      "gamesPlayed": 48,
+      "averageScore": 85,
+      "skillsImproved": 4
+    },
+    "lastMonth": {
+      "gamesPlayed": 42,
+      "averageScore": 78,
+      "skillsImproved": 3
+    }
+  },
+  "badges": [
+    {
+      "id": 1,
+      "name": "Focus Master",
+      "description": "Maintained focus for 5 consecutive sessions",
+      "dateAchieved": "2023-12-15",
+      "icon": "🎯"
+    },
+    {
+      "id": 2,
+      "name": "Memory Champion",
+      "description": "Achieved 90% accuracy in memory games",
+      "dateAchieved": "2023-12-18",
+      "icon": "🧠"
+    },
+    {
+      "id": 3,
+      "name": "Problem Solver",
+      "description": "Solved 50 puzzles successfully",
+      "dateAchieved": "2023-12-20",
+      "icon": "💡"
+    }
+  ],
+  "mostImprovedSkills": [
+    {
+      "skill": "Memory",
+      "improvement": "+25%",
+      "previousScore": 45,
+      "currentScore": 70
+    },
+    {
+      "skill": "Focus",
+      "improvement": "+20%",
+      "previousScore": 65,
+      "currentScore": 85
+    },
+    {
+      "skill": "Problem Solving",
+      "improvement": "+20%",
+      "previousScore": 55,
+      "currentScore": 75
+    }
+  ]
+}

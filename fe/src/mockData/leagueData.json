@@ -1,0 +1,128 @@
+{
+  "familyLeague": {
+    "members": [
+      {
+        "id": 1,
+        "name": "Gukesh",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Gukesh",
+        "accuracy": 92,
+        "challengesCompleted": 98,
+        "weeklyAccuracy": 87,
+        "weeklyChallengesCompleted": 12,
+        "phone": "+1234567890"
+      },
+      {
+        "id": 2,
+        "name": "Humpy",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Humpy",
+        "accuracy": 88,
+        "challengesCompleted": 50,
+        "weeklyAccuracy": 92,
+        "weeklyChallengesCompleted": 8,
+        "phone": "+1234567891"
+      },
+      {
+        "id": 3,
+        "name": "Nihal",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Nihal",
+        "accuracy": 85,
+        "challengesCompleted": 62,
+        "weeklyAccuracy": 75,
+        "weeklyChallengesCompleted": 5,
+        "phone": "+1234567892"
+      }
+    ],
+    "backupMembers": [
+      {
+        "name": "Raunak",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Raunak",
+        "accuracy": 84,
+        "challengesCompleted": 25,
+        "weeklyAccuracy": 68,
+        "weeklyChallengesCompleted": 3
+      },
+      {
+        "name": "Divya",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Divya",
+        "accuracy": 82,
+        "challengesCompleted": 12,
+        "weeklyAccuracy": 56,
+        "weeklyChallengesCompleted": 1
+      }
+    ]
+  },
+  "schoolLeague": {
+    "members": [
+      {
+        "id": 4,
+        "name": "Harika",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Harika",
+        "accuracy": 94,
+        "challengesCompleted": 102,
+        "weeklyAccuracy": 90,
+        "weeklyChallengesCompleted": 10,
+        "phone": "+1234567893"
+      },
+      {
+        "id": 5,
+        "name": "Pragg",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Pragg",
+        "accuracy": 91,
+        "challengesCompleted": 74,
+        "weeklyAccuracy": 88,
+        "weeklyChallengesCompleted": 9,
+        "phone": "+1234567894"
+      },
+      {
+        "id": 6,
+        "name": "Tania",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tania",
+        "accuracy": 89,
+        "challengesCompleted": 62,
+        "weeklyAccuracy": 85,
+        "weeklyChallengesCompleted": 7,
+        "phone": "+1234567895"
+      },
+      {
+        "id": 7,
+        "name": "Arjun",
+        "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun",
+        "accuracy": 87,
+        "challengesCompleted": 60,
+        "weeklyAccuracy": 80,
+        "weeklyChallengesCompleted": 2,
+        "phone": "+1234567896"
+      }
+    ]
+  },
+  "challenges": {
+    "weekly": [
+      {
+        "id": 1,
+        "title": "Bring Pictoro Back to Power",
+        "description": "Complete the story mode chapter and help Pictoro regain control",
+        "progress": 75
+      },
+      {
+        "id": 2,
+        "title": "Math Mastermind",
+        "description": "Complete 15 numerical reasoning challenges",
+        "progress": 30
+      }
+    ],
+    "monthly": [
+      {
+        "id": 3,
+        "title": "Problem Solving Champion",
+        "description": "Complete 50 problem-solving challenges with 90% accuracy",
+        "progress": 85
+      },
+      {
+        "id": 4,
+        "title": "Team Player",
+        "description": "Help 20 other players complete their challenges",
+        "progress": 60
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+.chatScene {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #fdf7e3; /* Light beige background */
+  color: #3e3e3e;
+}
+
+.chatHeader {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: #c697cd; /* Warm light brown */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+
+
+
+.characterSelection {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+  overflow-x: auto;
+  background: #fbede9;
+}
+
+.characterCard {
+  flex: 0 0 120px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ece5e3; /* Very light beige */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.characterCard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.characterCard.selected {
+  border-color: #c697cd; /* Subtle brown for selection */
+  transform: scale(1.1);
+}
+
+.chatContainer {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fbede9; /* Light beige chat background */
+}
+
+.chatBubble {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+  line-height: 1.5;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+.chatBubble.user {
+  align-self: flex-end;
+  background: #c697cd; /* Warm light brown */
+  color: white;
+  border-top-right-radius: 0;
+  opacity: 80%;
+}
+
+.chatBubble.character {
+  text-align: left;
+  align-self: flex-start;
+  background: #ece5e3; /* Lighter cream for character responses */
+  color: #3e3e3e;
+  border-top-left-radius: 0;
+}
+
+.characterLabel {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #5a4a2d; /* Brown label color */
+}
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #fbede9; /* Light cream for input container */
+}
+
+.inputBox {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #d6c6a7; /* Subtle border for input */
+  font-size: 1rem;
+  outline: none;
+  background: #fbede9; /* Very light beige */
+  color: #5a4a2d;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #c697cd; /* Warm brown button */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sendButton:hover {
+  background: #9c815c; /* Darker shade of brown for hover */
+}
+
+.sendButton:disabled {
+  background: #c697cd; /* Muted brown for disabled state */
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+.characterName {
+  color: black;
+}
+
+.languageDropdown {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #bfa380;
+  background: #c697cd;
+  color: white;
+  cursor: pointer;
+}
+
+.languageDropdown:hover {
+  border-color: #9c815c;
+}

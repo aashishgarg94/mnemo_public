@@ -1,0 +1,57 @@
+.selectionContainer {
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .characterContainer, .worldContainer {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  
+  .characterCard, .worldCard {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .characterCard:hover, .worldCard:hover {
+    transform: scale(1.1);
+  }
+  
+  .characterImage, .worldImage {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .selected {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.7);
+  }
+  
+  p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .disabled {
+    opacity: 0.9;
+    pointer-events: none;
+  }
+
+  .worldCard:not(.disabled):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }

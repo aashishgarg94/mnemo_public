@@ -1,0 +1,91 @@
+{
+  "_id": "cleopatra_scenario_01",
+  "title": "Cleopatra’s Grand Ambition",
+  "overview": "In this scenario, Cleopatra wishes to build a monumental pyramid to secure her legacy, while also ensuring the prosperity of her people and maintaining alliances with neighboring regions.",
+  "recommendedAge": 12,
+
+  "initialMetrics": {
+    "treasury": 500,
+    "pyramid_completion": 0,
+    "public_happiness": 80,
+    "worker_morale": 70
+  },
+
+  "rules": {
+    "actions": [
+      {
+        "actionName": "build pyramid",
+        "keywords": ["build", "pyramid", "construct"],
+        "costs": {
+          "treasury": 100
+        },
+        "effects": {
+          "pyramid_completion": 10,
+          "worker_morale": -5
+        },
+        "successMessage": "Spent 100 from the treasury. The pyramid progresses by 10%. Worker morale decreases slightly."
+      },
+      {
+        "actionName": "host festival",
+        "keywords": ["festival", "celebrate", "holiday"],
+        "costs": {
+          "treasury": 50
+        },
+        "effects": {
+          "public_happiness": 10,
+          "worker_morale": 5
+        },
+        "successMessage": "A grand festival was held! Public happiness and worker morale both improve."
+      },
+      {
+        "actionName": "raise taxes",
+        "keywords": ["raise taxes", "taxation", "increase taxes"],
+        "costs": {},
+        "effects": {
+          "treasury": 50,
+          "public_happiness": -10
+        },
+        "successMessage": "Taxes have been raised. Treasury grows, but the people are less happy."
+      },
+      {
+        "actionName": "improve worker conditions",
+        "keywords": ["improve workers", "support workers", "better conditions"],
+        "costs": {
+          "treasury": 40
+        },
+        "effects": {
+          "worker_morale": 15
+        },
+        "successMessage": "Worker conditions improved. Morale increases significantly!"
+      }
+    ],
+
+    "randomEvents": [
+      {
+        "eventName": "Nile Flooding",
+        "triggerCondition": "random",
+        "effects": {
+          "treasury": -20,
+          "public_happiness": 5
+        },
+        "eventMessage": "The Nile floods, requiring 20 from treasury for repairs, but farmland is more fertile (+5 public happiness)."
+      },
+      {
+        "eventName": "Advisor Dispute",
+        "triggerCondition": "random",
+        "effects": {
+          "worker_morale": -10
+        },
+        "eventMessage": "Two of Cleopatra’s advisors are locked in conflict, reducing worker morale by 10."
+      },
+      {
+        "eventName": "Treasure Discovery",
+        "triggerCondition": "random",
+        "effects": {
+          "treasury": 100
+        },
+        "eventMessage": "Archaeologists find hidden treasure! +100 treasury."
+      }
+    ]
+  }
+}

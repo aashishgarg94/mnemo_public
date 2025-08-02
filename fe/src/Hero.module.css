@@ -1,0 +1,111 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #380935, #050d18);
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-out;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  animation: slideUp 1s ease-out 0.3s both;
+}
+
+.ctaButton {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(253, 136, 137, 0.3);
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(163, 114, 175, 0.2);
+  filter: blur(60px);
+}
+
+.orb1 {
+  width: 300px;
+  height: 300px;
+  top: -150px;
+  right: -150px;
+}
+
+.orb2 {
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  left: -200px;
+  background: rgba(253, 136, 137, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.2rem;
+  }
+}

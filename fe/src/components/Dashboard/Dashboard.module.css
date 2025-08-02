@@ -1,0 +1,58 @@
+.dashboardPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/* Grid layout for dashboard components */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Card styles */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Section titles */
+.sectionTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 1rem;
+    padding-bottom: 5rem; /* Space for mobile navigation */
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

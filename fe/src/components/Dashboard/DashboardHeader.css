@@ -1,0 +1,44 @@
+.dashboard-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    color: #dc3545;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #fff5f5;
+    border-color: #dc3545;
+}
+
+.logout-icon {
+    font-size: 1.2rem;
+}

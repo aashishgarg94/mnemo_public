@@ -1,0 +1,242 @@
+.gamePage {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.backgroundCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.backButton {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: rgba(253, 136, 137, 0.1);
+  border: 1px solid rgba(253, 136, 137, 0.3);
+  border-radius: 25px;
+  color: #fd8889;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.backButton:hover {
+  background: rgba(253, 136, 137, 0.2);
+  transform: translateY(-2px);
+}
+
+.inputSection {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.inputSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weightInput {
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(163, 114, 175, 0.3);
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.planets {
+  margin-top: 3rem;
+}
+
+.planets h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fd8889;
+}
+
+.planetGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.planet {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.planet:hover {
+  transform: translateY(-10px);
+}
+
+.planetImage {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(163, 114, 175, 0.3);
+  transition: all 0.3s ease;
+}
+
+.planet:hover .planetImage {
+  border-color: #fd8889;
+  box-shadow: 0 0 20px rgba(253, 136, 137, 0.3);
+}
+
+.planetImageItem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.planetName {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.gameContainer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 4rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.gameContainer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weightControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.addedWeights {
+  width: 100%;
+}
+
+.weightStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.weightButton {
+  padding: 0.8rem 1.5rem;
+  background: rgba(163, 114, 175, 0.2);
+  border: 1px solid rgba(163, 114, 175, 0.3);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.weightButton:hover {
+  background: rgba(163, 114, 175, 0.3);
+  transform: translateX(5px);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fd8889;
+}
+
+.playAgainButton {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.playAgainButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(253, 136, 137, 0.3);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .planetGrid {
+    gap: 1rem;
+  }
+
+  .planetImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .weightControls {
+    padding: 0 1rem;
+  }
+}

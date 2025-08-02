@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a2e, #02070e);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Global gradient background */
+.gradient-bg {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* Global button styles */
+.button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #fd8889, #a372af);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(253, 136, 137, 0.3);
+}
+
+/* Global heading styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #fd8889, #a372af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Global icon and outline styles */
+.icon, .outline {
+  color: #a372af;
+}
+
+/* Global link styles */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fd8889;
+}
+
+/* Global text styles */
+p {
+  color: #ffffff;
+  line-height: 1.6;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section styles */
+section {
+  /*background: linear-gradient(135deg, #380935, #050d18);*/
+  padding: 4rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
